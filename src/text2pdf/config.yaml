@@ -1,0 +1,37 @@
+pagesep: "\x0C"
+page:
+  a3: [297, 420]
+  b4: [257, 364]
+  a4: [210, 297]
+  b5: [182, 257]
+  a5: [148, 210]
+  hagaki: [100, 148]
+
+fontpath:
+  - 'c:\Windows\Fonts'
+  - '%LOCALAPPDATA%\Microsoft\Windows\Fonts'
+
+font:
+  yu: yumin.ttf
+  noto: NotoSansJP-VF.ttf
+  udev: UDEVGothic-Bold.ttf
+  ipa: ipaexg.ttf
+
+choices:
+  do: ['print', 'edit', 'open']
+
+default:
+  out: output.pdf
+  page: a4
+  margin: 10
+  size: 16
+  height: 8
+  font: noto
+
+sample_title: 'text2pdf font sample'
+sample: |-
+  The quick brown fox jumps over the lazy dog
+  いろはにほへとちりぬるをわかよたれそつねならむ
+  うゐのおくやまけふこえてあさきゆめみしゑひもせす
+  色は匂へど散りぬるを我が世誰ぞ常ならむ
+  有為の奥山今日越えて浅き夢見し酔ひもせず
