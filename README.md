@@ -1,6 +1,9 @@
 # text2pdf
-text typesetter
+text typesetter with fpdf2
 
+- プレーンテキストをPDF化します
+- 特殊文字は「改行」「改ページ」だけ処理が行えるようにします
+- マークアップによる強調などの装飾は扱いません
 
 ## INSTALL
 
