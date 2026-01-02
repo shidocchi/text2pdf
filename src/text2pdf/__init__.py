@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Iterator
 from .pdfbase import FontFace, PdfBase
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 class Text2Pdf:
   """text typesetter"""
