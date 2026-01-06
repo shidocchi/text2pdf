@@ -86,15 +86,16 @@ class Text2Pdf:
     if self.args.do:
       os.startfile(self.args.out, operation=self.args.do)
 
-  def typeset(self, textin, sep=None) -> None:
-    sep = sep or self.conf['pagesep']
-    for page in self.paginate(textin, sep):
+  def typeset(self, textin) -> None:
+    sep = self.conf['pagesep']
+    for page in self.paginate(textin):
       if page == sep:
         self.pdf.add_page()
       else:
         self.pdf.write(self.args.height, page)
 
-  def paginate(self, textin, sep) -> Iterator[str]:
+  def paginate(self, textin) -> Iterator[str]:
+    sep = self.conf['pagesep']
     page = []
     for line in textin:
       while True:
